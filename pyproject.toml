@@ -1,0 +1,28 @@
+[project]
+name = "random-access"
+version = "0.0.1"
+description = "A minimal FastAPI app with Click and Hatch"
+authors = [{ name = "Micha R. Albert", email = "info@micha.zone" }]
+dependencies = [
+    "fastapi~=0.115.12",
+    "uvicorn[standard]~=0.34.2",
+    "click~=8.2.1",
+    "sqlmodel~=0.0.24",
+    "argon2-cffi~=23.1.0"
+]
+requires-python = ">=3.12"
+
+[project.scripts]
+random-access-server = "random_access.cli:cli"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "src/random_access"
+]
