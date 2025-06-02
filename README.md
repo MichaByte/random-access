@@ -1,3 +1,3 @@
 # Random Access
 
-This is a work-in-progess, all will be revealed soon™!
+## Development has been moved to my [Forgejo](https://forgejo.org/) instance at https://git.mra.sh/mra/random-access! Nothing against GitHub, just trying out something new :)
